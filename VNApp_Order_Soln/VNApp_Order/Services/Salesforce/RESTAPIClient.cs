@@ -9,6 +9,7 @@ using System.Net.Http.Headers;
 
 using VNApp_Order.Controllers.Orders;
 using VNApp_Order.Controllers.Members;
+using VNApp_Order.Controllers.Products;
 using VNApp_Order.Services.Salesforce;
 
 namespace VNApp_Order.Services.Salesforce
@@ -113,7 +114,7 @@ namespace VNApp_Order.Services.Salesforce
             }
         }
 
-        public async Task CreateOrder(APIType_Order orderId, List<APIType_Order> lstRequestProduct, APIResponse_Create apiResponse)
+        public async Task CreateOrder(APIType_Order orderId, List<APIType_Product> lstRequestProduct, APIResponse_Create apiResponse)
         {
             try
             {
