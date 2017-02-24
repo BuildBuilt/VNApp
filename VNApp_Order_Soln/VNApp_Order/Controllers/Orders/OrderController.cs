@@ -16,6 +16,7 @@ using VNApp_Order.Controllers.Members;
 using VNApp_Order.Services;
 using VNApp_Order.Services.Salesforce;
 using VNApp_Order.Controllers.Orders;
+using VNApp_Order.Controllers.Products;
 
 namespace VNApp_Order.Controllers.Orders
 {
@@ -60,11 +61,11 @@ namespace VNApp_Order.Controllers.Orders
                 order.RecordTypeId = "012p00000004fJMAAY"; //VNRecordTypeId[Sandbox]
 
                 
-                List<APIType_Order> lstTempProduct = new List<APIType_Order>();
+                List<APIType_Product> lstTempProduct = new List<APIType_Product>();
 
                 foreach (string product in order.ProductCodes)
                 {
-                    APIType_Order newProduct = new APIType_Order();
+                    APIType_Product newProduct = new APIType_Product();
                     newProduct.ProductCodeExternal__c = product;
                     lstTempProduct.Add(newProduct);
                 }

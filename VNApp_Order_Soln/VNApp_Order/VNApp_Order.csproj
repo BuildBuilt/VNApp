@@ -118,6 +118,7 @@
     <Compile Include="Controllers\Orders\APIResponse_SubmitOrder.cs" />
     <Compile Include="Controllers\Orders\APIType_Order.cs" />
     <Compile Include="Controllers\Orders\OrderController.cs" />
+    <Compile Include="Controllers\Products\APIType_Product.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

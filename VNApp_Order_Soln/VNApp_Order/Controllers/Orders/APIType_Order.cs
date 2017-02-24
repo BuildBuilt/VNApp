@@ -11,14 +11,12 @@ namespace VNApp_Order.Controllers.Orders
     {
         public string OrderId { get; set; }
         public List<string> ProductCodes { get; set; }
-        public string ProductCodeExternal__c { get; set; }
 
         public APIType_Order()
         {
             //Order
             OrderId = "";
             ProductCodes = new List<string>();
-            ProductCodeExternal__c = "";
 
             //Members
             FirstName = "";
